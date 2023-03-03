@@ -28,16 +28,16 @@ public class BiggestNumberInArray {
         }
 
         // SORTING ARRAY
-        for (int i = 0; i < num.length; i++) {
-            int temp = 0;
-            for (int j = i+1; j < num.length; j++) {
-                if (num[i] > num[j]){
-                    temp = num[i];
-                    num[i] = num[j];
-                    num[j] = temp;
-                }
-            }
-        }
+//        for (int i = 0; i < num.length; i++) {
+//            int temp = 0;
+//            for (int j = i+1; j < num.length; j++) {
+//                if (num[i] > num[j]){
+//                    temp = num[i];
+//                    num[i] = num[j];
+//                    num[j] = temp;
+//                }
+//            }
+//        }
         System.out.println(Arrays.toString(num));
         System.out.println(smallest);
         System.out.println(biggest);

@@ -17,6 +17,8 @@ public class Fib {
 
         Prime(5);
 
+        fixString();
+
 
     }
 
@@ -38,6 +40,13 @@ public class Fib {
             System.out.println(number + " is not a Prime number");
         }
     }
+
+    public static void fixString(){
+
+
+
+    }
+
 
 
 
