@@ -26,7 +26,7 @@ public class Practice {
         driver.switchTo().frame("frame2");
         System.out.println(driver.findElement(By.xpath("//h1[contains(text(),'This is a sample page')]")).getText());
 
-
+        System.out.println("new code from Aizhamal");
         ////div[@id='slider1']//input[@type='range']
         ////div[@class='sp__range']
     }
