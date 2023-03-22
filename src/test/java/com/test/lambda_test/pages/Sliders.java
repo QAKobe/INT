@@ -13,7 +13,6 @@ import java.util.List;
 
 public class Sliders {
 
-    public WebDriver driver;
 
     public Sliders(WebDriver driver) {
         PageFactory.initElements(driver, this);

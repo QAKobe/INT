@@ -13,7 +13,7 @@ public class BaseTest {
     public void setUp() {
 
         driver = DriverHelper.getDriver();
-        driver.get(ConfigReader.readProperty("lambdaUrl"));
+        driver.get(ConfigReader.readProperty("urlBumlr"));
     }
 
 }

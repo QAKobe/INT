@@ -9,6 +9,9 @@ import org.testng.annotations.Test;
 import utils.BrowserUtils;
 import utils.DriverHelper;
 
+import static org.testng.Assert.assertEquals;
+
+
 public class TumblrTest extends BaseTest {
 
     WebDriver driver = DriverHelper.getDriver();
@@ -29,7 +32,7 @@ public class TumblrTest extends BaseTest {
             Thread.sleep(2000);
         }
         mainPage.nextBtn().get(0).click();
-        Assert.assertEquals(errorMsg, BrowserUtils.getText(mainPage.errorMsg()));
+        assertEquals(errorMsg, BrowserUtils.getText(mainPage.errorMsg()));
         System.out.println(mainPage.errorMsg().getText());
     }
 }
