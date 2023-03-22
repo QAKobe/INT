@@ -1,7 +1,8 @@
 package interview;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import io.cucumber.java.sl.In;
+
+import java.util.*;
 
 public class arrays {
     public static void main(String[] args) {
@@ -53,6 +54,23 @@ public class arrays {
 }
 
          */
+
+
+        int num = 23;  // primitive
+
+        Integer num2 = 7; // object type
+
+        List<Integer> list = new ArrayList<>();
+
+        List list1 = new ArrayList();
+
+
+        HashMap map = new HashMap<>();
+        map.put("fhhf", 8);
+
+
+
+
 
 
     }
