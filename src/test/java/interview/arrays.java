@@ -1,5 +1,7 @@
 package interview;
 
+import java.lang.reflect.Array;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -58,6 +60,44 @@ public class arrays {
 }
 
          */
+
+        String str = "f47ad387";
+        String number = "";
+        String number2 = "";
+        int total = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (Character.isDigit(str.charAt(i))){
+                number = number + str.charAt(i);
+            }else {
+
+            }
+        }
+
+        if(Character.isDigit(number.charAt(0))){
+            total = Integer.parseInt(number);
+        }
+        System.out.println(total);
+
+
+        String array [] = {"Apple", "Apple", "Orange", "Pineapple", "Blueberry"};
+
+       Map<String, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < array.length; i++) {
+
+            if (!map.containsKey(array[i])){
+                map.put(array[i], 1);
+            }else {
+                int value = map.get(array[i]);
+                map.put(array[i], value+1);
+            }
+
+        }
+        System.out.println(map);
+
+
+
+
 
 
     }
