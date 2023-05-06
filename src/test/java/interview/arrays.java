@@ -1,6 +1,7 @@
 package interview;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -66,38 +67,69 @@ public class arrays {
         String number2 = "";
         int total = 0;
         for (int i = 0; i < str.length(); i++) {
-            if (Character.isDigit(str.charAt(i))){
+            if (Character.isDigit(str.charAt(i))) {
                 number = number + str.charAt(i);
-            }else {
+            } else {
 
             }
         }
 
-        if(Character.isDigit(number.charAt(0))){
+        if (Character.isDigit(number.charAt(0))) {
             total = Integer.parseInt(number);
         }
         System.out.println(total);
 
 
-        String array [] = {"Apple", "Apple", "Orange", "Pineapple", "Blueberry"};
+        String array[] = {"Apple", "Orange", "Pineapple", "Blueberry", "java"};
 
-       Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new HashMap<>();
 
         for (int i = 0; i < array.length; i++) {
 
-            if (!map.containsKey(array[i])){
+            if (!map.containsKey(array[i])) {
                 map.put(array[i], 1);
-            }else {
+            } else {
                 int value = map.get(array[i]);
-                map.put(array[i], value+1);
+                map.put(array[i], value + 1);
             }
 
         }
         System.out.println(map);
 
+        int nums[] = {7, 6, 5, 4, 3, 2, 1};
+        for (int i = 0; i < nums.length; i++) {
+            int temp = 0;
 
+            for (int j = i + 1; j < nums.length; j++) {
 
+                if (nums[i] > nums[j]) {
+                    temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
 
+            }
+        }
+        System.out.println(Arrays.toString(nums));
+
+        for (int i = 0; i < array.length; i++) {
+            String reversedTemp = "";
+            String notReversedTemp = "";
+            if (i % 2 == 0) {
+
+                for (int j = array[i].length() - 1; j >= 0; j--) {
+
+                    reversedTemp += array[i].charAt(j);
+
+                }
+
+            } else {
+                notReversedTemp += array[i];
+
+            }
+            System.out.println(notReversedTemp);
+            System.out.println(reversedTemp);
+        }
 
 
     }
