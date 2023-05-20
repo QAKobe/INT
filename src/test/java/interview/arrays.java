@@ -1,10 +1,16 @@
 package interview;
 
+<<<<<<< HEAD
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+=======
+import io.cucumber.java.sl.In;
+
+import java.util.*;
+>>>>>>> checkout
 
 public class arrays {
     public static void main(String[] args) {
@@ -130,6 +136,25 @@ public class arrays {
             System.out.println(notReversedTemp);
             System.out.println(reversedTemp);
         }
+
+
+        int num = 23;  // primitive
+
+        Integer num2 = 7; // object type
+
+        List<Integer> list = new ArrayList<>();
+
+        List list1 = new ArrayList();
+
+
+        HashMap map = new HashMap<>();
+        map.put("fhhf", 8);
+
+
+        // worked on this one please redo
+
+
+
 
 
     }

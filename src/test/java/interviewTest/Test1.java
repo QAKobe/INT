@@ -1,12 +1,6 @@
-package test;
+package interviewTest;
 
 import org.junit.Test;
-
-import java.io.File;
-import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.Optional;
-import java.util.Scanner;
 
 public class Test1 {
 

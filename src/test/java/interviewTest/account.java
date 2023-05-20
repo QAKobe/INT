@@ -1,4 +1,4 @@
-package test;
+package interviewTest;
 
 import java.math.BigDecimal;
 
